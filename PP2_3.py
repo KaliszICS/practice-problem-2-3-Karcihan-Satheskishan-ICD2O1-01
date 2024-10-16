@@ -1,5 +1,12 @@
+'''
+
+    Lesson: Else If
+    Author: Karcihan Satheskishan
+    Date Created: Oct 16, 2024
+    Date Last Modified: Oct 16, 2024
+
+'''
 def q1(): 
-  #Write Assignment code here
   word=input("In: ")
   if word[-2:]=="ey":
     print("-eys")
@@ -17,10 +24,22 @@ def q2():
   elif num<0:
     print(f"{num} is negative")
 
-
+def q3():
+  num1=float(input("Input a number: "))
+  num2=float(input("Input a number: "))
+  num3=float(input("Input a number: "))
+  if num1+num2<num3 or num2+num3<num1 or num1+num3<num2:
+    print("No Triangle")
+  elif num1==num2 and num2==num3:
+    print("Equilateral")
+  elif num1==num2 and num2!=num3 or num1!=num2 and num2==num3:
+    print("Isosceles")
+  else:
+    print("Scalene")
 
 #Do not alter the following code
 #Comment out the following code when running your tests
 
-q1()
-q2()
+#q1()
+#q2()
+#q3()
