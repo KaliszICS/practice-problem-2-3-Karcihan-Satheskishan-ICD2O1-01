@@ -1,11 +1,11 @@
 def q1(): 
   #Write Assignment code here
   word=input("In: ")
-  if word[-1:-3]=="ey":
+  if word[-2:]=="ey":
     print("-eys")
   elif word[-1] == "y":
     print("-ies")
-  elif word[-1:-4]=="ife":
+  elif word[-3:]=="ife":
     print("-ives")
   else:
     print("-s")
