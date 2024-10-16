@@ -1,11 +1,21 @@
-
-
 def q1(): 
   #Write Assignment code here
-
+  word=input("In: ")
+  if word[-1:-3]=="ey":
+    print("-eys")
+  elif word[-1] == "y":
+    print("-ies")
+  elif word[-1:-4]=="ife":
+    print("-ives")
+  else:
+    print("-s")
 
 def q2(): 
-  #Write Assignment code here
+  num=int(input("In: "))
+  if num>0:
+    print(f"{num} is positive")
+  elif num<0:
+    print(f"{num} is negative")
 
 
 
